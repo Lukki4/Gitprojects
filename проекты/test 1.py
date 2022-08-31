@@ -31,4 +31,5 @@ class Testcod(unittest.TestCase):
 
 if __name__ == '__main__':
     print('Отлично')
+    print('Отлично2')
     unittest.main()
