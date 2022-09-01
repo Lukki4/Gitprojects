@@ -108,8 +108,7 @@ def obr():  # основная функция обработки файла
             if summa:
                 ost = re.findall('(?<![0-9])[0-9]{7,13}(?![0-9])', str((worksheet.cell(row, int(commentc))).value))  # комментарий
                 data = (str((worksheet.cell(row, int(datac))).value)[:-9]).replace('.', '-')  # дата
-                data = data.split('-')
-                data.reverse()
+                data = data.split('-').reverse()
                 data = '-'.join(data)
                 cursor = con.cursor()  # открываю курсор к базе
                 for nls in ost:
