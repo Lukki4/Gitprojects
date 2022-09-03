@@ -4,6 +4,7 @@ import pyodbc
 import configparser
 import time
 import re
+#проверка создания ветки
 
 
 def cod():
