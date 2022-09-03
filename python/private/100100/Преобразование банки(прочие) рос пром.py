@@ -5,7 +5,7 @@ import configparser
 import time
 import re
 #проверка создания ветки
-
+#проверка после удаления ответвления
 
 def cod():
     global codec
